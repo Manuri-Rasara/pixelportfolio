@@ -1,0 +1,11 @@
+.footer button {
+    background-color: transparent;
+    border: none;
+    margin: 50px;
+    
+}
+
+.footer button .footerimg {
+  width: 170px;
+  cursor: pointer;
+}

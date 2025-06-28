@@ -5,6 +5,7 @@ import ScrollText from './Components/ScrollText';
 import  Skill  from './Components/Skill';
 import  Work  from './Components/Work';
 import  Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ScrollText/>
 
       <Contact/>
+      <Footer/>
     </div>
   );
 }
