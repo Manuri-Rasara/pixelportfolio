@@ -103,8 +103,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .workmaintitle h1{
+
+    font-size: 63.25px;
+  }
   .work-card {
     flex-direction: column;
+    border-radius: 10px;
   }
 
   .card-image,
@@ -116,4 +121,23 @@
   .card-content {
     padding: 20px;
   }
+
+  .card-content p {
+    width: 90%;
+ 
+}
+
+.card-content h2 {
+  font-size: 20px;
+ 
+  letter-spacing: 2px;
+}
+}
+
+@media (max-width: 500px) {
+  .workmaintitle h1{
+
+    font-size: 43.25px;
+  }
+ 
 }

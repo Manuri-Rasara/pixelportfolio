@@ -5,12 +5,12 @@
   background: #000; 
   color: #fff; 
   font-size: 6rem;
-  font-weight: bold;
+  
   box-sizing: border-box;
   padding: 10px 0;
   font-family: 'offbit',sans-serif;
   z-index: 0;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 
 .scroll-text {
@@ -27,4 +27,13 @@
   100% {
     transform: translateX(-100%);
   }
+}
+
+
+@media (max-width: 768px) {
+  .scroll-container {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
 }
