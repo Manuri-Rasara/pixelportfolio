@@ -24,7 +24,7 @@
 .right .links .round {
   background-color: white;
   padding: 10px 20px;
-  border-radius: 12px;
+  border-radius: 100px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -32,6 +32,11 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+.right .links .rounded {
+ 
+  border-radius: 10px;
+ 
+}
 .right .links .round:hover {
   background-color: #197DFF;
   
