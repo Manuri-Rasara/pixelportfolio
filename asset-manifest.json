@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/pixelportfolio/static/css/main.c22d1e0a.css",
+    "main.js": "/pixelportfolio/static/js/main.d6fa719a.js",
+    "static/js/453.1ef5d5ba.chunk.js": "/pixelportfolio/static/js/453.1ef5d5ba.chunk.js",
+    "static/media/pj4.png": "/pixelportfolio/static/media/pj4.7a4c5e4911bf0c79ef71.png",
+    "static/media/pj1.png": "/pixelportfolio/static/media/pj1.b6187a65324a5e916ef9.png",
+    "static/media/lap.gif": "/pixelportfolio/static/media/lap.b6f143c560787d8bafba.gif",
+    "static/media/pj5.png": "/pixelportfolio/static/media/pj5.c3910a0d3e9cf5a5ad18.png",
+    "static/media/pj2.png": "/pixelportfolio/static/media/pj2.b4be18a42f07c815c841.png",
+    "static/media/pj3.png": "/pixelportfolio/static/media/pj3.3dd47b5694224085543d.png",
+    "static/media/OffBit.ttf": "/pixelportfolio/static/media/OffBit.e9feea1e097e6b47ccaf.ttf",
+    "static/media/Neue Haas Display.ttf": "/pixelportfolio/static/media/Neue Haas Display.0d0eccefca4089460861.ttf",
+    "static/media/Neue Haas Display-Light.ttf": "/pixelportfolio/static/media/Neue Haas Display-Light.34c4c9a883a2f2bb27cd.ttf",
+    "static/media/btn2.png": "/pixelportfolio/static/media/btn2.43318a167da48c2ca3ea.png",
+    "static/media/btn3.png": "/pixelportfolio/static/media/btn3.118ffa1efe911fda44d9.png",
+    "static/media/btn4.png": "/pixelportfolio/static/media/btn4.2306406c9b05a8d9cb48.png",
+    "static/media/navlogo-01.png": "/pixelportfolio/static/media/navlogo-01.379f3fa57ae01e62f978.png",
+    "static/media/flower.svg": "/pixelportfolio/static/media/flower.e2e57b395930aa347e6c55e23523aa9a.svg",
+    "static/media/green-smile.svg": "/pixelportfolio/static/media/green-smile.c9b63086c13fbf6ca58c7d9310e3db0b.svg",
+    "index.html": "/pixelportfolio/index.html",
+    "main.c22d1e0a.css.map": "/pixelportfolio/static/css/main.c22d1e0a.css.map",
+    "main.d6fa719a.js.map": "/pixelportfolio/static/js/main.d6fa719a.js.map",
+    "453.1ef5d5ba.chunk.js.map": "/pixelportfolio/static/js/453.1ef5d5ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c22d1e0a.css",
+    "static/js/main.d6fa719a.js"
+  ]
+}
