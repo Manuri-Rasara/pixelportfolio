@@ -1,0 +1,245 @@
+
+
+.left .navlogo {
+  width: 170px;
+}
+
+.right .links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  z-index: 89000;
+}
+
+.right .links ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'haas';
+  font-size: 20px;
+
+  z-index: 89000;
+}
+
+.right .links .round {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.right .links .round:hover {
+  background-color: #197DFF;
+  
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 50px 30px 0px;
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+
+
+.right .links ul .rounded li a .contacticon {
+  color: black;
+  font-family: 'haas';
+  align-items: center;
+  justify-content: center;
+  font-weight: 100px;
+  z-index: 89000;
+}
+
+.right .links ul .rounded:hover .contacticon {
+  color: #ffffff;
+}
+
+
+
+.hamburger.animated-icon {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 30px;
+  z-index: 1001;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ 
+}
+
+.hamburger .icon {
+  position: absolute;
+  font-size: 24px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger .plus {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.hamburger .close {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.hamburger.open .plus {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.hamburger.open .close {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow-y: auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay-header {
+  position: absolute;
+  top: 20px;   
+  left: 30px;   
+  z-index: 1002;
+}
+
+
+
+.overlay-logo {
+  width: 150px;
+  margin-left: 0;
+}
+
+
+.overlay-menu {
+  list-style: none;
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 20px;
+}
+
+.overlay-menu li {
+  margin: 10px 20px;
+  background-color: #222222;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 180px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.overlay-menu li:hover {
+  background-color: #197DFF;
+  color: white;
+}
+
+.overlay-menu li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'haaslight';
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  
+}
+
+.overlay .touchsmall{
+    background-color: transparent;
+    border: 3px solid #197DFF;
+    color: #197DFF;
+}
+
+.overlay .touchsmall:hover{
+    background-color:#197DFF;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .right {
+    display: none;
+  }
+
+  .hamburger.animated-icon {
+    display: flex;
+  }
+
+ 
+
+  .left .navlogo {
+    width: 150px;
+  }
+  .nav{
+    align-items: center;
+  }
+}
+
+
+
+@media screen and (max-width: 441px) {
+
+    .overlay-menu li {
+  margin: 10px 20px;
+  text-align: center;
+  padding: 20px 140px;
+  
+}
+
+ .nav{
+    align-items: center;
+  }
+
+ 
+}
+
+@media screen and (max-width: 408px) {
+
+    .overlay-menu li {
+     margin: 10px 20px;
+     text-align: center;
+     padding: 20px 110px;
+  
+}
+
+ 
+}

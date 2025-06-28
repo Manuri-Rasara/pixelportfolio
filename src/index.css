@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+}
+
+@font-face {
+  font-family: 'haas';
+  src: url('./Components//assets//fonts//Neue\ Haas\ Display.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'offbit';
+  src: url('./Components//assets//fonts/OffBit.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'haaslight';
+  src: url('./Components//assets//fonts/Neue\ Haas\ Display-Light.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:  'haas' , 'offbit' , 'haaslight' , sans-serif;
 }

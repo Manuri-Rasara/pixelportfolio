@@ -1,0 +1,108 @@
+/* Wrapper */
+.contact-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main card */
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* Left panel - blue icon */
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-star {
+  width: 120px;
+  height: 120px;
+  background-color: #1e78ff;
+  border-radius: 50%;
+  mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C13.1 2 14 2.9 14 4V6.1L15.8 5.1C16.8 4.5 18.1 4.9 18.7 5.9 19.3 6.9 18.9 8.2 17.9 8.8L16.1 9.8 18.2 11C19.2 11.6 19.6 12.9 19 13.9 18.4 14.9 17.1 15.3 16.1 14.7L14 13.5V15.8L16.1 17C17.1 17.6 17.5 18.9 16.9 19.9 16.3 20.9 15 21.3 14 20.7L12 19.5 10 20.7C9 21.3 7.7 20.9 7.1 19.9 6.5 18.9 6.9 17.6 7.9 17L10 15.8V13.5L7.9 14.7C6.9 15.3 5.6 14.9 5 13.9 4.4 12.9 4.8 11.6 5.8 11L7.9 9.8 6.1 8.8C5.1 8.2 4.7 6.9 5.3 5.9 5.9 4.9 7.2 4.5 8.2 5.1L10 6.1V4C10 2.9 10.9 2 12 2Z"/></svg>');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: inherit;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/* Right panel - text */
+.contact-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+
+.contact-badge {
+  background-color: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .contact-left {
+    margin-bottom: 20px;
+  }
+
+  .blue-star {
+    width: 80px;
+    height: 80px;
+  }
+}
