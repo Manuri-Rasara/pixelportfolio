@@ -133,10 +133,7 @@
   letter-spacing: 2px;
 }
 
-.card-button .btnimg{
-   
-  height: 50px;
-}
+
 }
 
 @media (max-width: 500px) {
@@ -145,9 +142,6 @@
     font-size: 43.25px;
   }
 
-  .card-button .btnimg{
-   
-  height: 50px;
-}
+
  
 }
