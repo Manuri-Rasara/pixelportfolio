@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: sans-serif;
   
@@ -95,5 +95,102 @@ body {
   .allskills {
     margin: 0 35px;
     border-radius: 10px;
+  }
+} */
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.skill-container {
+  margin: 0 3.125rem; /* 50px */
+  padding: 2rem 0;
+  max-width: 100%;
+}
+
+.skill-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-title {
+  font-size: 3.5rem; /* 56px */
+  margin: 0;
+  color: white;
+  font-family: 'haaslight', sans-serif;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.75rem; /* 28px */
+  color: white;
+}
+
+.skill-item {
+  white-space: nowrap;
+  font-family: 'haaslight', sans-serif;
+}
+
+.skill-line {
+  height: 0.75rem; /* 12px */
+  width: 100%;
+}
+
+.skill-line hr {
+  color: white;
+}
+
+.maintagline {
+  color: white;
+  font-size: 6rem; /* 96px */
+  font-family: 'offbit', sans-serif;
+  margin-left: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
+  margin-top: 6.25rem; /* 100px */
+  letter-spacing: 0.0625rem; /* 1px */
+}
+
+.allskills {
+  background-color: #1e1e1e;
+  border-radius: 1.25rem; /* 20px */
+  margin: 0 2.5rem 2.5rem 2.5rem; /* 0 40px 40px 40px */
+}
+
+@media screen and (max-width: 768px) {
+  .skill-container {
+    margin: 0 1.25rem; /* 20px */
+    padding: 1.5rem 0;
+  }
+
+  .skill-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-title {
+    font-size: 2.2rem; /* 35.2px */
+  }
+
+  .skill-list {
+    font-size: 1.25rem; /* 20px */
+    gap: 0.75rem; /* 12px */
+  }
+
+  .maintagline {
+    font-size: 3.5rem; /* 56px */
+    margin-left: 1.25rem; /* 20px */
+    margin-top: 4.375rem; /* 70px */
+  }
+
+  .allskills {
+    margin: 0 2.1875rem; /* 35px */
+    border-radius: 0.625rem; /* 10px */
   }
 }

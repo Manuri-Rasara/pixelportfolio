@@ -1,4 +1,4 @@
-.headline {
+/* .headline {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -39,7 +39,7 @@
 .intro-image-card {
   background-color: #1e1e1e;
   flex: 1 1 400px;
-  min-height: 150px; /* Ensure same height */
+  min-height: 150px; 
   max-width: 900px;
   padding:50px;
   border-radius: 20px;
@@ -182,7 +182,7 @@
   .intro-image-card .flydiv {
     padding: 20px;
     font-size: 22px;
-    width: 50%; /* Keep it same layout, just shrink */
+    width: 50%; 
   }
 
   .intro-image-card .flydiv .plane svg {
@@ -265,7 +265,7 @@
   }
 
   .intro-image-card .bottomall {
-    flex-direction: row; /* Don't switch to column */
+    flex-direction: row; 
     gap: 10px;
     align-items: center;
   }
@@ -289,4 +289,254 @@
     width: 36px;
 }
 }
+ */
 
+
+
+ .headline {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-left: 3.125rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.sec1 {
+  margin-top: 9.375rem;
+}
+
+.headline h1 {
+  color: white;
+  font-size: 2.7031rem;
+  font-family: 'offbit', sans-serif;
+  letter-spacing: 0.0625rem;
+}
+
+.headline img {
+  width: 2.25rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  justify-content: center;
+}
+
+.intro-card,
+.intro-image-card {
+  background-color: #1e1e1e;
+  flex: 1 1 25rem;
+  min-height: 9.375rem;
+  max-width: 56.25rem;
+  padding: 3.125rem;
+  border-radius: 1.25rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-title {
+  font-size: 2.1875rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'offbit', sans-serif;
+  letter-spacing: 0.0625rem;
+}
+
+.intro-text {
+  font-size: 1.75rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: 'haaslight', sans-serif;
+  letter-spacing: 0.0625rem;
+}
+
+.highlight {
+  color: #59fc8e;
+  font-weight: bold;
+}
+
+.name {
+  color: #197DFF;
+}
+
+.resume-button {
+  margin-top: 6.25rem;
+  width: 100%;
+  padding: 1.25rem 1rem;
+  border: 0.125rem solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'offbit', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.resume-button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.intro-image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.intro-image-card .lap {
+  border-radius: 0.75rem;
+}
+
+.intro-image-card .flydiv {
+  border-radius: 0.75rem;
+  color: #1e1e1e;
+  background-color: #f65444;
+  padding: 1.5625rem;
+  width: 50%;
+  font-size: 2.1875rem;
+  text-align: center;
+  font-family: 'haaslight', sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.intro-image-card .flydiv .plane svg {
+  font-size: 3.125rem;
+  color: #1e1e1e;
+}
+
+.intro-image-card .bottomall {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+
+.intro-image-card .bottomall .sure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'offbit', sans-serif;
+  border-radius: 625rem;
+  width: 20%;
+  background-color: #fbd344;
+  color: #1e1e1e;
+  font-size: 2.1875rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .intro-image-card {
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
+
+  .intro-image-card .lap {
+    width: 100%;
+    height: auto;
+    max-height: 13.75rem;
+  }
+
+  .intro-image-card .flydiv {
+    padding: 1.25rem;
+    font-size: 1.375rem;
+    width: 50%;
+  }
+
+  .intro-image-card .flydiv .plane svg {
+    font-size: 1.875rem;
+  }
+
+  .intro-image-card .bottomall {
+    flex-direction: row;
+    gap: 0.9375rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro-image-card .bottomall .sure {
+    font-size: 1.375rem;
+    width: 4.375rem;
+    height: 3.125rem;
+    padding: 0.875rem;
+  }
+
+  .intro-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .intro-card,
+  .intro-image-card {
+    padding: 1.875rem;
+    border-radius: 0.625rem;
+  }
+
+  .resume-button {
+    margin-top: 3.125rem;
+    border-radius: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .headline h1 {
+    font-size: 1.4531rem;
+  }
+
+  .headline img {
+    width: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro-image-card {
+    gap: 0.9375rem;
+  }
+
+  .intro-image-card .flydiv {
+    padding: 0.875rem;
+    font-size: 0.9375rem;
+    width: 50%;
+    border-radius: 0.625rem;
+  }
+
+  .intro-image-card .flydiv .plane svg {
+    font-size: 1.625rem;
+  }
+
+  .intro-image-card .bottomall {
+    flex-direction: row;
+    gap: 0.625rem;
+    align-items: center;
+  }
+
+  .intro-image-card .bottomall .sure {
+    width: 3.75rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding: 0.875rem;
+  }
+
+  .headline h1 {
+    font-size: 0.8281rem;
+  }
+
+  .headline img {
+    width: 2.25rem;
+  }
+}
