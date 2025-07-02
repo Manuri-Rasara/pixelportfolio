@@ -30,7 +30,6 @@ export const Navbar = () => {
 
     const scrollToSection = () => {
       if (sectionId === null) {
-        // Scroll to top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const section = document.getElementById(sectionId);
@@ -43,16 +42,19 @@ export const Navbar = () => {
 
     if (location.pathname !== '/') {
       navigate('/');
-      setTimeout(scrollToSection, 150); // Wait for page to load before scrolling
+      // Wait for DOM update after route change before scrolling
+      setTimeout(() => {
+        requestAnimationFrame(scrollToSection);
+      }, 300);
     } else {
-      scrollToSection();
+      requestAnimationFrame(scrollToSection);
     }
   };
 
   return (
     <div className='nav'>
       {/* Left Logo */}
-      <div className='left'   onClick={() => (window.location.href = "/")} style={{ cursor: "pointer" }}>
+      <div className='left' onClick={() => (window.location.href = "/")} style={{ cursor: "pointer" }}>
         <img src={navlogo} alt='manuri logo' className='navlogo' />
       </div>
 

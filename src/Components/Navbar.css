@@ -180,9 +180,15 @@
   color: rgb(255, 255, 255);
   border-radius: 12px;
   text-align: center;
-  padding: 20px 180px;
+  padding: 20px 0px;
   transition: background-color 0.3s ease;
   cursor: pointer;
+}
+
+.overlay-menu li .nav-button {
+
+width: 100%;
+  
 }
 
 .overlay-menu li:hover {
@@ -242,7 +248,7 @@
     .overlay-menu li {
   margin: 10px 20px;
   text-align: center;
-  padding: 20px 140px;
+  
   
 }
 
@@ -258,7 +264,7 @@
     .overlay-menu li {
      margin: 10px 20px;
      text-align: center;
-     padding: 20px 110px;
+ 
   
 }
 
