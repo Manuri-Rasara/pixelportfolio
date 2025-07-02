@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaLinkedin, FaBehance, FaFacebook, FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaBehance, FaFacebook, FaEnvelope, FaPhoneAlt, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import flower from './assets/images/flower.svg';
 
 const Contact = () => {
@@ -28,15 +28,16 @@ const Contact = () => {
               <span>078-7531134</span>
             </div>
             <div className="info-socials">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/manurirasarahewage" target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://behance.net/yourprofile" target="_blank" rel="noreferrer">
+               <a href="https://github.com/Manuri-Rasara" target="_blank" rel="noreferrer">
+                <FaGithub />
+              </a>
+              <a href="https://www.behance.net/manuri" target="_blank" rel="noreferrer">
                 <FaBehance />
               </a>
-              <a href="https://facebook.com/yourprofile" target="_blank" rel="noreferrer">
-                <FaFacebook />
-              </a>
+             
             </div>
           </div>
 
@@ -46,7 +47,14 @@ const Contact = () => {
           </p>
           
 
-          <button className="contact-button">Inbox Me</button>
+         <button
+  className="contact-button"
+  onClick={() => {
+    window.location.href = "mailto:manurirasara812@gmail.com";
+  }}
+>
+  Inbox Me
+</button>
         </div>
       </div>
     </div>

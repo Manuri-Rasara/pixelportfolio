@@ -3,8 +3,16 @@ import './Proof04.css';
 import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof04_fooddelivery_app.png";
 import flower from "../assets/images/s1.png";
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div className="container">
       <div className="top-image">
@@ -12,7 +20,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title"><span className='colortext'>FastGrab</span> Purple Bites UI</h1>
+        <h1 className="project-title-4"><span className='colortext'>FastGrab</span> Purple Bites UI</h1>
         <p className="project-description">
          FastGrab is a modern food delivery app UI designed on Figma, 
          featuring a dark theme complemented by deep purple tones. 
@@ -47,8 +55,8 @@ export default function Proof01() {
             <div className="contact-box">
               <p>Loved what you saw above? Dive into the full project on Behance and if it sparks something, just inbox me!</p>
 
-              <button className="btn-light allbtns"><FaBehance /> Behance</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://www.behance.net/gallery/214803811/UIUX-DESIGN-FOOD-DELIVERY-APP", "_blank")} className="btn-light allbtns"><FaBehance /> Behance</button>
+             <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

@@ -11,14 +11,21 @@
 } */
 
 
-
+/* 
 .footer button {
   background-color: transparent;
   border: none;
-  margin: 3.125rem; /* 50px */
+  margin: 3.125rem; 
 }
 
 .footer button .footerimg {
-  width: 10.625rem; /* 170px */
+  width: 10.625rem; 
   cursor: pointer;
+} */
+
+.footer{
+  width: 100%;
+  height: 40px;
+  margin: 80px 0px 0px 0px;
+  background-color: #59fc8e;
 }

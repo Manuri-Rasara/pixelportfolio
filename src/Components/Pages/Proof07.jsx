@@ -4,9 +4,15 @@ import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof07_porfolio_emoji_colors_dark&lightmode.png";
 import flower from "../assets/images/s1.png";
 import { TfiWorld } from "react-icons/tfi";
-
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div className="container">
       <div className="top-image">
@@ -14,7 +20,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title">My Portfolio <span className='colortext'>v2.0</span> Emojify</h1>
+        <h1 className="project-title-7">My Portfolio <span className='colortext'>v2.0</span> Emojify</h1>
         <p className="project-description">
           
             Welcome to my Portfolio v2.0  a 
@@ -58,9 +64,9 @@ export default function Proof01() {
                 Inbox Me button to reach me directly. Curious about
                  how it was built? Explore the code on GitHub. Let’s 
                  connect, create, or just say hi! everything’s right here!</p>
-              <button className="btn-light allbtns"><FaGithub /> Github Repo</button>
-              <button className="btn-light allbtns"><TfiWorld />Website</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://github.com/Manuri-Rasara/portfolio-light", "_blank")} className="btn-light allbtns"><FaGithub /> Github Repo</button>
+              <button onClick={() => window.open("https://manuri-rasara.github.io/portfolio-light/", "_blank")} className="btn-light allbtns"><TfiWorld />Website</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

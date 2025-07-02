@@ -1,43 +1,43 @@
-import './App.css';
-import FirstSection from './Components/FirstSection';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './Components/Navbar';
-import ScrollText from './Components/ScrollText';
-import  Skill  from './Components/Skill';
-import  Work  from './Components/Work';
-import  Contact from './Components/Contact';
 import Footer from './Components/Footer';
+
+import Home from './Home';
 import Proof01 from './Components/Pages/Proof01';
+import Proof02 from './Components/Pages/Proof02';
 import Proof03 from './Components/Pages/Proof03';
 import Proof04 from './Components/Pages/Proof04';
 import Proof05 from './Components/Pages/Proof05';
 import Proof06 from './Components/Pages/Proof06';
 import Proof07 from './Components/Pages/Proof07';
 import Proof08 from './Components/Pages/Proof08';
-import ProofLogo01 from "../src/Components/Pages/LogoProof/ProofLogo01"
-import ProofLogo02 from "../src/Components/Pages/LogoProof/ProofLogo02"
-
-
-
-
-
+import ProofLogo01 from './Components/Pages/LogoProof/ProofLogo01';
+import ProofLogo02 from './Components/Pages/LogoProof/ProofLogo02';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      {/* ✅ Global Navbar */}
+      <Navbar />
 
-      <Navbar/>
-      <FirstSection/>
-      
-      <Skill/>
-     <Work/>
-      <ScrollText/>
+      {/* ✅ Route-specific content */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/proof/mosqguard" element={<Proof01 />} />
+        <Route path="/proof/portfolio_design" element={<Proof02 />} />
+        <Route path="/proof/company_website_ui_design" element={<Proof03 />} />
+        <Route path="/proof/food_delivery_app_ui_design" element={<Proof04 />} />
+        <Route path="/proof/company_website_design_blue" element={<Proof05 />} />
+        <Route path="/proof/my_portfolio_version_01" element={<Proof06 />} />
+        <Route path="/proof/my_portfolio_version_02" element={<Proof07 />} />
+        <Route path="/proof/my_portfolio_version_03" element={<Proof08 />} />
+        <Route path="/proof/coffee_cafe_logos" element={<ProofLogo01 />} />
+        <Route path="/proof/normal_cafe_logos" element={<ProofLogo02 />} />
+      </Routes>
 
-      <Contact/>
-
-
-
-         <Footer/>
-    </div>
+      {/* ✅ Global Footer */}
+      <Footer />
+    </Router>
   );
 }
 

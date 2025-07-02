@@ -3,8 +3,13 @@ import './Proof01.css';
 import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof01_moquguard.png";
 import flower from "../assets/images/s1.png";
+import { useEffect } from 'react';
 
 export default function Proof01() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="container">
       <div className="top-image">
@@ -12,7 +17,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title"><span className='colortext'>MosqGuard</span> Health Interface</h1>
+        <h1 className="project-title-1"><span className='colortext'>MosqGuard</span> Health Interface</h1>
         <p className="project-description">
           MosqGuard is a mobile application that helps users stay informed about mosquito-borne disease risks 
           through real-time alerts, hotspot mapping, educational content, and user reports. I designed the complete 
@@ -47,9 +52,9 @@ export default function Proof01() {
             <div className="contact-box">
               <p>Dive into the MosqGuard experience , explore the UI design on Behance and browse the code on GitHub. 
                 Ready to connect or start a new project? Hit the contact button and let’s make it happen!<br />Contact Me</p>
-              <button className="btn-light allbtns"><FaGithub /> Github Repo</button>
+              <button onClick={() => window.open("https://github.com/thanujaDev26/MOSQGUARD#", "_blank")} className="btn-light allbtns"><FaGithub /> Github Repo</button>
               <button className="btn-light allbtns"><FaBehance /> Behance</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProofLogo02.css';
-
+import { useEffect } from 'react';
 // Import images from src/assets/images
 import img0 from '../../assets/images/islandtoast-mockup.png';
 import img1 from '../../assets/images/islandtoast-03.png';
@@ -13,6 +13,10 @@ import img7 from '../../assets/images/islandtoastmod-07.png';
 import img8 from '../../assets/images/islandtoastmod-08.png';
 
 const ProofLogo01 = () => {
+        useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+  
   const images = [img0,img1, img2, img3, img4, img5, img6, img7,img8];
 
   return (

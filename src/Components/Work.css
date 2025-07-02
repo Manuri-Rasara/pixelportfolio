@@ -190,7 +190,7 @@
   font-size: 1.75rem; /* 28px */
   margin: 0 0 0.625rem 0; /* 0 0 10px */
   font-family: 'offbit', sans-serif;
-  letter-spacing: 0.0625rem; /* 1px */
+  letter-spacing: 2px; /* 1px */
 }
 
 .card-tags {

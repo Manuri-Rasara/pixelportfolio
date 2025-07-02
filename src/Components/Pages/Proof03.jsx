@@ -3,8 +3,16 @@ import './Proof03.css';
 import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof03_orange_companywebsite.png";
 import flower from "../assets/images/s1.png";
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div className="container">
       <div className="top-image">
@@ -12,7 +20,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title"><span className='colortext'>Energetic</span> Corporate UI Design</h1>
+        <h1 className="project-title-3"><span className='colortext'>Energetic</span> Corporate UI Design</h1>
         <p className="project-description">
           A clean and professional UI design for a company website featuring clear sections for Why Choose Us, About the 
           Company, Services Offered, Project Showcase, and Contact Information. Designed for desktop with a focus on 
@@ -47,8 +55,8 @@ export default function Proof01() {
             <div className="contact-box">
               <p>Explore my project above on Behance and feel free to inbox me! I’m excited to connect and collaborate!</p>
             
-              <button className="btn-light allbtns"><FaBehance /> Behance</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://www.behance.net/gallery/215616801/UIUX-DESIGN", "_blank")} className="btn-light allbtns" ><FaBehance /> Behance</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

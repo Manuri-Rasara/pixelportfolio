@@ -4,9 +4,14 @@ import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof08_line_portfolio.jpeg";
 import flower from "../assets/images/s1.png";
 import { TfiWorld } from "react-icons/tfi";
-
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="container">
       <div className="top-image">
@@ -14,7 +19,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title">My Portfolio <span className='colortext'>v3.0</span> Lineform</h1>
+        <h1 className="project-title-8">My Portfolio <span className='colortext'>v3.0</span> Lineform</h1>
         <p className="project-description">
           
             I built Portfolio v3.0 with React and CSS but this isn’t 
@@ -57,9 +62,9 @@ export default function Proof01() {
               <p>Hello and welcome to Portfolio v3.0,where every pixel tells a story and 
                 every line of code sparks creativity. Explore, connect, or 
                 dive into the code,this is a space where innovation lives.</p>
-              <button className="btn-light allbtns"><FaGithub /> Github Repo</button>
-              <button className="btn-light allbtns"><TfiWorld />Website</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://github.com/Manuri-Rasara/Portfolio0404", "_blank")} className="btn-light allbtns"><FaGithub /> Github Repo</button>
+              <button onClick={() => window.open("https://manuri-rasara.github.io/Portfolio0404/", "_blank")} className="btn-light allbtns"><TfiWorld />Website</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

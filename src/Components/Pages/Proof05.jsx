@@ -3,8 +3,15 @@ import './Proof05.css';
 import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof05_companywebsite_ui_blue.png";
 import flower from "../assets/images/s1.png";
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div className="container">
       <div className="top-image">
@@ -12,7 +19,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title"><span className='colortext'>Trust Wave</span> UI</h1>
+        <h1 className="project-title-5"><span className='colortext'>Trust Wave</span> UI</h1>
         <p className="project-description">
           This sleek desktop-first UI design brings a professional edge to a company 
           website, organizing content into intuitive sections like Why Choose Us, About, 
@@ -50,8 +57,8 @@ export default function Proof01() {
             <div className="contact-box">
               <p>Catch the full vibe of my above project on Behance and if you’re feeling inspired, hit that inbox button!</p>
 
-              <button className="btn-light allbtns"><FaBehance /> Behance</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://www.behance.net/gallery/215658395/UI-UX-DESIGN", "_blank")} className="btn-light allbtns"><FaBehance /> Behance</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

@@ -4,9 +4,15 @@ import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof06_portfolio_my_yellowpowerbolt.png";
 import flower from "../assets/images/s1.png";
 import { TfiWorld } from "react-icons/tfi";
-
+import { useEffect } from 'react';
 
 export default function Proof01() {
+
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div className="container">
       <div className="top-image">
@@ -14,7 +20,7 @@ export default function Proof01() {
       </div>
 
       <div className="project-section">
-        <h1 className="project-title">My Portfolio <span className='colortext'>v1.0</span> Black & Bolt</h1>
+        <h1 className="project-title-6">My Portfolio <span className='colortext'>v1.0</span> Black & Bolt</h1>
         <p className="project-description">
           Welcome to my portfolio website, version 01. This project features a sleek and modern black
            glassmorphism design, with a striking yellow powerbolt accent that adds energy and personality. 
@@ -55,9 +61,9 @@ export default function Proof01() {
                 into the code on GitHub to see how the site was built. Whether 
                 you want to connect, collaborate, or just say hi, everything 
                 you need is right here in one place!</p>
-              <button className="btn-light allbtns"><FaGithub /> Github Repo</button>
-              <button className="btn-light allbtns"><TfiWorld />Website</button>
-              <button className="btn-dark allbtns">Inbox Me</button>
+              <button onClick={() => window.open("https://github.com/Manuri-Rasara/portfolio", "_blank")}  className="btn-light allbtns"><FaGithub /> Github Repo</button>
+              <button onClick={() => window.open("https://manuri-rasara.github.io/portfolio/", "_blank")}  className="btn-light allbtns"><TfiWorld />Website</button>
+              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
 

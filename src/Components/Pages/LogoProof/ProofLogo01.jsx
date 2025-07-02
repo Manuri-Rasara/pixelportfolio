@@ -10,9 +10,17 @@ import img4 from '../../assets/images/cyloncrumbs-04.png';
 import img5 from '../../assets/images/cyloncrumbs-05.png';
 import img6 from '../../assets/images/cyloncrumbs-06.png';
 import img7 from '../../assets/images/cyloncrumbs-07.png';
+import { useEffect } from 'react';
 
 const ProofLogo01 = () => {
+        useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+  
+      
   const images = [img0,img1, img2, img3, img4, img5, img6, img7];
+
+
 
   return (
     <div className="proof-container">
