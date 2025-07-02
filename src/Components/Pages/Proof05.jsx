@@ -1,7 +1,7 @@
 import React from 'react';
 import './Proof05.css';
 import { FaGithub, FaBehance } from 'react-icons/fa';
-import proof01 from "../assets/images/proof05_companywebsite_ui_blue.png";
+import proof01 from "../assets/images/proof05_companywebsite_ui_blue.webp";
 import flower from "../assets/images/s1.png";
 import { useEffect } from 'react';
 

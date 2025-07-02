@@ -2,7 +2,7 @@ import React from 'react';
 import './ProofLogo02.css';
 import { useEffect } from 'react';
 // Import images from src/assets/images
-import img0 from '../../assets/images/islandtoast-mockup.png';
+import img0 from '../../assets/images/islandtoast-mockup.webp';
 import img1 from '../../assets/images/islandtoast-03.png';
 import img2 from '../../assets/images/islandtoastmod-02.png';
 import img3 from '../../assets/images/islandtoastmod-03.png';

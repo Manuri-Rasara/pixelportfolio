@@ -109,7 +109,7 @@ const cardData = [
     description: 'Specializing in logo designs that reflect the warm and welcoming spirit of cafés.',
     buttonText: 'Case Study',
     buttonLink: '/proof/coffee_cafe_logos',
-    buttonimg : btn2,
+    buttonimg : btn4,
   },
 
 

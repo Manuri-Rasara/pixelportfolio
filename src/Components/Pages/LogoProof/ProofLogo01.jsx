@@ -2,7 +2,7 @@ import React from 'react';
 import './ProofLogo01.css';
 
 // Import images from src/assets/images
-import img0 from '../../assets/images/cyloncrumbs-mockup.png';
+import img0 from '../../assets/images/cyloncrumbs-mockup.webp';
 import img1 from '../../assets/images/cyloncrumbs-01.png';
 import img2 from '../../assets/images/cyloncrumbs-02.png';
 import img3 from '../../assets/images/cyloncrumbs-03.png';
