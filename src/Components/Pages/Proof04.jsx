@@ -1,0 +1,62 @@
+import React from 'react';
+import './Proof04.css';
+import { FaGithub, FaBehance } from 'react-icons/fa';
+import proof01 from "../assets/images/proof04_fooddelivery_app.png";
+import flower from "../assets/images/s1.png";
+
+export default function Proof01() {
+  return (
+    <div className="container">
+      <div className="top-image">
+        <img src={proof01} alt="Mockup" className="mockup" />
+      </div>
+
+      <div className="project-section">
+        <h1 className="project-title"><span className='colortext'>FastGrab</span> Purple Bites UI</h1>
+        <p className="project-description">
+         FastGrab is a modern food delivery app UI designed on Figma, 
+         featuring a dark theme complemented by deep purple tones. 
+         The dark background adds a sleek, premium feel, while the 
+         purple color stimulates appetite and creativity,creating 
+         an engaging and stylish user experience.
+        </p>
+      </div>
+
+      <div className="info-section">
+        {/* First Row */}
+        <div className="row">
+          <div className="typography-box">
+            <h2>TYPOGRAPHY</h2>
+            <p>Inter</p>
+          </div>
+
+          <div className="colors-box">
+            <h2>COLORS</h2>
+            <div className="color" style={{ background: '#0C0B34' ,color: '#FFFFFF'}}>#004DB9</div>
+            <div className="color" style={{ background: '#4A3063', color: '#FFFFFF' }}>#FECA00</div>
+            <div className="color" style={{ background: '#000000' ,color: '#FFFFFF'}}>#FFFFFF</div>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="bottom-row">
+          <div className="contact-box-wrapper">
+            <div className="flower-overlay">
+              <img src={flower} alt="Flower" />
+            </div>
+            <div className="contact-box">
+              <p>Loved what you saw above? Dive into the full project on Behance and if it sparks something, just inbox me!</p>
+
+              <button className="btn-light allbtns"><FaBehance /> Behance</button>
+              <button className="btn-dark allbtns">Inbox Me</button>
+            </div>
+          </div>
+
+          <div className="flower-box">
+            <img src={flower} alt="Flower" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

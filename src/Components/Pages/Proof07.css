@@ -1,0 +1,229 @@
+
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 130px auto;
+  color: white;
+}
+
+.top-image {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.mockup {
+  width: 100%;
+
+}
+
+.project-section {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 5rem;
+  font-family: 'offbit',sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+
+}
+
+.project-title .colortext {
+ color: #61E7FF;
+
+}
+
+.project-description {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #ccc;
+  font-family: 'haaslight', sans-serif;
+  letter-spacing: 0.0625rem;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.typography-box,
+.colors-box {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 50px;
+  border-radius: 20px;
+  min-width: 100px;
+  font-family: 'haaslight',sans-serif;
+}
+
+.typography-box h2,
+.colors-box h2 {
+  margin-bottom: 40px;
+  font-family: 'offbit',sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.typography-box p{
+    font-size: 2rem;
+    font-family: 'haaslight',sans-serif;
+}
+.color {
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact + Flower */
+.bottom-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Contact Box Wrapper */
+.contact-box-wrapper {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 50px;
+  border-radius: 20px;
+  position: relative;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.contact-box p {
+    font-family: 'haaslight',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+  margin-bottom: 100px;
+
+}
+
+.allbtns{
+
+   
+
+  padding: 1.25rem 1rem;
+
+margin-bottom: 10px;
+
+
+  font-size: 1.125rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.btn-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#ccc;
+  border: none;
+  padding: 1rem 1rem;
+  margin-bottom: 10px;
+  width: 100%;
+ border-radius: 1rem;
+color: #1e1e1e;
+  gap: 10px;
+
+}
+
+.btn-dark {
+  background-color:transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+ padding: 1.25rem 1rem;
+  width: 100%;
+
+  font-weight: bold;
+ 
+  
+font-family: 'offbit',sans-serif;
+}
+
+.btn-dark:hover{
+    background-color: #ccc;
+    color: black;
+    
+}
+
+.btn-light:hover{
+    background-color: #000000;
+    color: #ccc;
+    
+}
+
+/* Flower Box on large screens */
+.flower-box {
+  flex: 1;
+  min-width: 300px;
+  background: transparent;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower-box img {
+  width: 400px;
+  height: auto;
+}
+
+/* Hidden flower overlay (only for mobile) */
+.flower-overlay {
+  display: none;
+}
+
+/* Responsive (merge flower + contact) */
+@media (max-width: 768px) {
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .flower-box {
+    display: none; /* hide separate flower box */
+  }
+
+  .flower-overlay {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+  }
+
+  .flower-overlay img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-box-wrapper {
+    padding-top: 60px;
+  }
+
+  
+.project-title {
+  font-size: 2.5rem;
+ 
+
+}
+}

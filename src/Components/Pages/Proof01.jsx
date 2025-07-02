@@ -47,7 +47,7 @@ export default function Proof01() {
             <div className="contact-box">
               <p>Dive into the MosqGuard experience , explore the UI design on Behance and browse the code on GitHub. 
                 Ready to connect or start a new project? Hit the contact button and let’s make it happen!<br />Contact Me</p>
-              <button className="btn-light allbtns"><FaGithub /> Github Link</button>
+              <button className="btn-light allbtns"><FaGithub /> Github Repo</button>
               <button className="btn-light allbtns"><FaBehance /> Behance</button>
               <button className="btn-dark allbtns">Inbox Me</button>
             </div>
