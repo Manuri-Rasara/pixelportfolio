@@ -17,7 +17,7 @@ const ProofLogo01 = () => {
   return (
     <div className="proof-container">
       <header className="proof-header">
-        <h1>Cylon Crumbs -<span className='prooflogotitle'> Coffee Shop Logos</span></h1>
+        <h1>Cylon Crumbs -<span className='prooflogotitle01'> Coffee Shop Logos</span></h1>
       </header>
       <div className="grid-container">
         <div className="grid-item large">

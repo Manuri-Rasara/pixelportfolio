@@ -14,6 +14,7 @@ import Proof06 from './Components/Pages/Proof06';
 import Proof07 from './Components/Pages/Proof07';
 import Proof08 from './Components/Pages/Proof08';
 import ProofLogo01 from "../src/Components/Pages/LogoProof/ProofLogo01"
+import ProofLogo02 from "../src/Components/Pages/LogoProof/ProofLogo02"
 
 
 
@@ -25,26 +26,16 @@ function App() {
     <div className="App">
 
       <Navbar/>
-      {/* <FirstSection/>
+      <FirstSection/>
       
       <Skill/>
      <Work/>
       <ScrollText/>
 
-      <Contact/> */}
+      <Contact/>
 
-    
-{/*    
-      <Proof01/> */}
 
-    {/* <Proof02/> */}
-    {/* <Proof03/> */}
-    {/* <Proof04/> */}
-    {/* <Proof05/> */}
-    {/* <Proof06/> */}
-    {/* <Proof07/> */}
-    {/* <Proof08/> */}
-    <ProofLogo01/>
+
          <Footer/>
     </div>
   );

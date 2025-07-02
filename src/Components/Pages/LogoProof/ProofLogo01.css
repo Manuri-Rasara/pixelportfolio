@@ -7,7 +7,7 @@
   margin: 100px 20px;
 }
 
-.prooflogotitle{
+.prooflogotitle01{
     color: #D5BFB3;
 }
 .proof-header h1 {
@@ -27,7 +27,7 @@
 .grid-item {
   border: 2px solid black;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .grid-item img {
