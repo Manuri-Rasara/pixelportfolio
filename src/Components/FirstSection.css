@@ -540,3 +540,24 @@
     width: 2.25rem;
   }
 }
+
+
+.resume-button.unlocking {
+  background-color: #59fc8e;
+  color: #000;
+  border-color: #59fc8e;
+  transition: all 0.3s ease;
+}
+
+
+
+.resume-button svg {
+  font-size: 1.25rem;
+  margin-bottom: 2px; /* adjust this if needed */
+}
+.resume-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
