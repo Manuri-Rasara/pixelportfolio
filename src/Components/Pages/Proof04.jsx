@@ -4,6 +4,7 @@ import { FaGithub, FaBehance } from 'react-icons/fa';
 import proof01 from "../assets/images/proof04_fooddelivery_app.webp";
 import flower from "../assets/images/s1.png";
 import { useEffect } from 'react';
+import { FaFigma } from 'react-icons/fa6';
 
 export default function Proof01() {
 
@@ -53,9 +54,9 @@ export default function Proof01() {
               <img src={flower} alt="Flower" />
             </div>
             <div className="contact-box">
-              <p>Loved what you saw above? Dive into the full project on Behance and if it sparks something, just inbox me!</p>
+              <p>Loved what you saw above? Watch the prototype and if it sparks something, just inbox me!</p>
 
-              <button onClick={() => window.open("https://www.behance.net/gallery/214803811/UIUX-DESIGN-FOOD-DELIVERY-APP", "_blank")} className="btn-light allbtns"><FaBehance /> Behance</button>
+              <button onClick={() => window.open("https://www.figma.com/proto/0wsQCpBHfyo2AhkDijzLpf/FastGrab?node-id=59-518&t=YGPhfthMStHTyN14-1", "_blank")} className="btn-light allbtns"><FaFigma/> Prototype</button>
              <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>

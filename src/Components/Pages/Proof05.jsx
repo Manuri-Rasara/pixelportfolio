@@ -1,6 +1,6 @@
 import React from 'react';
 import './Proof05.css';
-import { FaGithub, FaBehance } from 'react-icons/fa';
+import { FaGithub, FaBehance, FaFigma } from 'react-icons/fa';
 import proof01 from "../assets/images/proof05_companywebsite_ui_blue.webp";
 import flower from "../assets/images/s1.png";
 import { useEffect } from 'react';
@@ -55,9 +55,9 @@ export default function Proof01() {
               <img src={flower} alt="Flower" />
             </div>
             <div className="contact-box">
-              <p>Catch the full vibe of my above project on Behance and if you’re feeling inspired, hit that inbox button!</p>
+              <p>Catch the full vibe of my project , watch the prototype and if you’re feeling inspired, hit that inbox button!</p>
 
-              <button onClick={() => window.open("https://www.behance.net/gallery/215658395/UI-UX-DESIGN", "_blank")} className="btn-light allbtns"><FaBehance /> Behance</button>
+              <button onClick={() => window.open("https://www.figma.com/proto/3PYbpGsQISfs2Ui1uPdA8o/Untitled?node-id=31-2344&t=jJwEusgNTTNL5BWl-1", "_blank")} className="btn-light allbtns"><FaFigma /> Prototype</button>
               <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Proof01.css';
-import { FaGithub, FaBehance } from 'react-icons/fa';
+import { FaGithub, FaBehance, FaFigma } from 'react-icons/fa';
 import proof01 from "../assets/images/proof01_moquguard.webp";
 import flower from "../assets/images/s1.png";
 import { useEffect } from 'react';
@@ -50,10 +50,10 @@ export default function Proof01() {
               <img src={flower} alt="Flower" />
             </div>
             <div className="contact-box">
-              <p>Dive into the MosqGuard experience , explore the UI design on Behance and browse the code on GitHub. 
-                Ready to connect or start a new project? Hit the contact button and let’s make it happen!<br />Contact Me</p>
+              <p>Dive into the MosqGuard experience, explore the UI design watch prototype and browse the code on GitHub.
+Ready to connect or start a new project? Hit the contact button and let’s make it happen! Contact Me</p>
               <button onClick={() => window.open("https://github.com/thanujaDev26/MOSQGUARD#", "_blank")} className="btn-light allbtns"><FaGithub /> Github Repo</button>
-              <button className="btn-light allbtns"><FaBehance /> Behance</button>
+              <button onClick={() => window.open("https://www.figma.com/proto/eyxyX9yo7VcOnYU9XKlTIc/Mosqguard?node-id=1-2&t=Qh565fy3pySu4g4H-1", "_blank")} className="btn-light allbtns"><FaFigma /> Prototype</button>
               <button onClick={() => {window.location.href = "mailto:manurirasara812@gmail.com";}} className="btn-dark allbtns">Inbox Me</button>
             </div>
           </div>
