@@ -227,4 +227,9 @@ font-family: 'offbit',sans-serif;
  
 
 }
+
+.typography-box ,
+.colors-box  {
+border-radius: 10px;
+}
 }
