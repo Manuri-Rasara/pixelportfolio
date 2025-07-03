@@ -19,7 +19,7 @@ const cardData = [
   {
     image: p1,
     title: 'MosqGuard',
-    tags: ['figma', 'mobile app','UI design'],
+    tags: ['figma', 'mobile app','UI design',],
     description: 'Report mosquito zones instantly. Monitor reports and take action fast.',
     buttonText: 'View Project',
     buttonLink: '/proof/mosqguard',
