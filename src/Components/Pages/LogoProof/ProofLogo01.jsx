@@ -37,6 +37,8 @@ const ProofLogo01 = () => {
           </div>
         ))}
       </div>
+
+      
     </div>
   );
 };
