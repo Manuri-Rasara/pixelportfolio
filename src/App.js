@@ -15,7 +15,7 @@ import Proof07 from './Components/Pages/Proof07';
 import Proof08 from './Components/Pages/Proof08';
 import ProofLogo01 from './Components/Pages/LogoProof/ProofLogo01';
 import ProofLogo02 from './Components/Pages/LogoProof/ProofLogo02';
-import WlanSearch from './Components/WlanSearch';
+import WlanSearch from './Components/PreLoaderScreen/WlanSearch';
 
 function App() {
   const [loading, setLoading] = useState(true);
